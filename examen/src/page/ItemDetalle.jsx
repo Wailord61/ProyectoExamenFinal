@@ -161,7 +161,7 @@ const DB = {
         id: "i7",
         name: "Diamante",
         info: "Mineral valioso.",
-        img: "/diamond.png",
+        img: "/mena.png",
         detalleGeneral:
           "El mineral más deseado del juego. Se usa en herramientas, armaduras y encantamientos avanzados.",
         stats: {
@@ -183,7 +183,7 @@ const DB = {
         id: "i8",
         name: "Perla Ender",
         info: "Permite teletransportarse.",
-        img: "/ender_pearl.png",
+        img: "/ender.png",
         detalleGeneral:
           "Objeto esencial para encontrar el portal al End.",
         stats: {
@@ -568,8 +568,83 @@ const DB = {
         estrategias: ["Sirve para recolectar materiales."]
       }
     ]
+  },
+
+  // CALL OF DUTY WARZONE   <── AÑADIDO
+  warzone: {
+    items: [
+      {
+        id: "w1",
+        name: "Rifle TAQ-56",
+        info: "Rifle de asalto meta.",
+        img: "/taq56.png",
+        detalleGeneral:
+          "El TAQ-56 es uno de los rifles más estables del meta de Warzone gracias a su precisión y control del retroceso.",
+        stats: {
+          Daño: "Alto",
+          Retroceso: "Bajo",
+          Alcance: "Medio-Largo"
+        },
+        curiosidades: [
+          "Arma dominante en Warzone 2.",
+          "Inspirada en la SCAR real."
+        ],
+        estrategias: [
+          "Combínalo con una SMG.",
+          "Ideal para 30-50 metros.",
+          "Controla el retroceso vertical."
+        ]
+      },
+
+      {
+        id: "w2",
+        name: "ISO 9mm",
+        info: "SMG rápida.",
+        img: "/iso9mm.png",
+        detalleGeneral:
+          "La ISO 9mm destaca por su cadencia extremadamente alta, ideal para combates a corta distancia.",
+        stats: {
+          Cadencia: "Muy alta",
+          Control: "Medio",
+          Alcance: "Corto"
+        },
+        curiosidades: [
+          "Meta en competitivo.",
+          "Muy usada en torneos oficiales."
+        ],
+        estrategias: [
+          "Perfecta para limpiar edificios.",
+          "Dispara a ráfagas cortas.",
+          "Apunta al pecho."
+        ]
+      },
+
+      {
+        id: "w3",
+        name: "Máscara de Gas",
+        info: "Item defensivo.",
+        img: "/gasmask.png",
+        detalleGeneral:
+          "Permite sobrevivir dentro del gas durante unos segundos, ideal para rotaciones finales.",
+        stats: {
+          Duración: "10s",
+          Tipo: "Accesorio",
+          Rareza: "Común"
+        },
+        curiosidades: [
+          "Puede ganar partidas en círculo final.",
+          "Existe versión dorada más duradera."
+        ],
+        estrategias: [
+          "Úsala para rotar sin ser visto.",
+          "Ideal para flanquear equipos.",
+          "Pruébala en zonas cerradas."
+        ]
+      }
+    ]
   }
 };
+
 
 
 

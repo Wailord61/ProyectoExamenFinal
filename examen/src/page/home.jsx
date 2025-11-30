@@ -35,7 +35,7 @@ const GAMES = [
     id: 'valorant',
     title: 'Valorant',
     short: 'FPS táctico con agentes y habilidades únicas.',
-    cover: '/valorant.jpg' // Asegura esta imagen en /public
+    cover: '/valo.jpg'
   },
 
   // Dragon Ball Sparking Zero
@@ -43,7 +43,7 @@ const GAMES = [
     id: 'dbsz',
     title: 'Dragon Ball Sparking Zero',
     short: 'Peleas explosivas en 3D con cientos de personajes.',
-    cover: '/dbsz.jpg'
+    cover: '/db.jpg'
   },
 
   // Fall Guys
@@ -51,7 +51,7 @@ const GAMES = [
     id: 'fallguys',
     title: 'Fall Guys',
     short: 'Caos colorido en minijuegos y carreras.',
-    cover: '/fallguys.jpg'
+    cover: '/fall.jpg'
   },
 
   // Super Smash Bros
@@ -67,7 +67,7 @@ const GAMES = [
     id: 'pokemonrojo',
     title: 'Pokémon Rojo',
     short: 'Aventura clásica atrapando Pokémon.',
-    cover: '/pokemon_rojo.jpg'
+    cover: '/poke.jpg'
   },
 
   // Fortnite
@@ -75,7 +75,15 @@ const GAMES = [
     id: 'fortnite',
     title: 'Fortnite',
     short: 'Battle Royale con construcción y cientos de skins.',
-    cover: '/fortnite.jpg'
+    cover: '/fornite.jpg'
+  },
+
+  // ⭐ NUEVO — CALL OF DUTY WARZONE (10° juego)
+  {
+    id: 'warzone',
+    title: 'Call of Duty: Warzone',
+    short: 'Battle Royale militar con armamento realista y acción intensa.',
+    cover: '/cod.jpg'   // Agrégala en /public
   }
 ];
 
@@ -110,7 +118,7 @@ export default function Home() {
               short: game.short,
               cover: game.cover,
               moreUrl: `/game/${game.id}`
-            }} 
+            }}
           />
         ))}
       </section>

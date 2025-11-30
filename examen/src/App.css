@@ -107,3 +107,8 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr;
   }
 }
+/* ARREGLO PARA IMÁGENES DEMASIADO GRANDES EN DETALLES */
+.details img {
+  max-height: 260px;
+  object-fit: contain;
+}
