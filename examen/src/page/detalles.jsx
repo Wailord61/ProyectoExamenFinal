@@ -6,7 +6,7 @@ const DB = {
   fifa26: {
     id: 'fifa26',
     title: 'FIFA 26',
-    cover: '/logo192.png',
+    cover: '/FC.jpg',
     developer: 'EA Sports',
     year: 2025,
     genre: 'Deportes',
@@ -19,7 +19,7 @@ const DB = {
   gta5: {
     id: 'gta5',
     title: 'GTA V',
-    cover: '/logo512.png',
+    cover: '/GTA.jpg',
     developer: 'Rockstar',
     year: 2013,
     genre: 'Acción Aventura',
@@ -32,7 +32,7 @@ const DB = {
   minecraft: {
     id: 'minecraft',
     title: 'Minecraft',
-    cover: '/minecraft-cover.png',
+    cover: '/maincra.jpg',
     developer: 'Mojang',
     year: 2011,
     genre: 'Sandbox',

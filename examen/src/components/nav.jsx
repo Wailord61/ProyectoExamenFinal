@@ -8,7 +8,7 @@ const Nav = () => {
       <div className="nav-container">
         {/* Logo */}
         <Link to="/" className="nav-logo">
-          <img src="/logo192.png" alt="Wikigames Logo" className="logo-img" />
+          <img src="/logoo.png" alt="Wikigames Logo" className="logo-img" />
           <span className="logo-text">WIKIGAMES</span>
         </Link>
 
