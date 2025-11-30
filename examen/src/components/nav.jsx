@@ -15,7 +15,6 @@ const Nav = () => {
         {/* Menú de navegación */}
         <div className="nav-menu">
           <Link to="/" className="nav-link">Inicio</Link>
-          <Link to="/profile" className="nav-link">Perfil</Link>
           <Link to="/login" className="nav-link">Login</Link>
         </div>
       </div>

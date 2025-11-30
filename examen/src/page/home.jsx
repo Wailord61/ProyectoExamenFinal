@@ -1,56 +1,99 @@
 import React from 'react';
 import GameCard from '../components/gamecard.jsx';
 
-// Sample data: juegos + items (puedes expandir)
+// =======================================================
+//     LISTA COMPLETA DE JUEGOS PARA EL HOME
+// =======================================================
+
 const GAMES = [
+  // FIFA 26
   {
     id: 'fifa26',
     title: 'FIFA 26',
-    short: 'Simulación de fútbol — modos carrera, Ultimate Team, clubs y más.',
-    cover: '/FC.jpg',
-    year: 2025,
-    developer: 'EA Sports',
-    genre: 'Deportes',
-    description: `FIFA 26 es la entrega más reciente de la franquicia. En esta mini-wiki verás datos principales y ejemplos de items (cartas, kits, objetos).`,
-    items: [
-      { id: 'fifa26-card-ronaldo', name: 'Carta Icon - Cristiano Ronaldo', info: 'Extremo, 93 de media.' },
-      { id: 'fifa26-kit-home', name: 'Kit del Barcelona 2025', info: 'Uniforme titular' }
-    ]
+    short: 'Simulación de fútbol — Ultimate Team, modos carrera y más.',
+    cover: '/FC.jpg'
   },
+
+  // GTA V
   {
     id: 'gta5',
     title: 'GTA V',
-    short: 'Acción y mundo abierto — misiones, vehículos, armas.',
-    cover: '/GTA.jpg',
-    year: 2013,
-    developer: 'Rockstar Games',
-    genre: 'Acción Aventura',
-    description: `Grand Theft Auto V, mundo abierto con múltiples protagonistas.`,
-    items: [
-      { id: 'gta5-car-infernus', name: 'Infernus', info: 'Supercoche clásico' },
-      { id: 'gta5-weapon-sniper', name: 'Rifle francotirador', info: 'Alto daño, largo alcance' }
-    ]
+    short: 'Acción, mundo abierto, misiones y vehículos.',
+    cover: '/GTA.jpg'
   },
+
+  // Minecraft
   {
     id: 'minecraft',
     title: 'Minecraft',
-    short: 'Sandbox de construcción, supervivencia y creatividad.',
-    cover: '/maincra.jpg',
-    year: 2011,
-    developer: 'Mojang',
-    genre: 'Sandbox',
-    description: `Crea y explora mundos generados proceduralmente.`,
-    items: [
-      { id: 'mc-diamond', name: 'Diamante', info: 'Mineral valioso para herramientas' },
-      { id: 'mc-ender-pearl', name: 'Perla ender', info: 'Teleportación' }
-    ]
+    short: 'Sandbox, supervivencia y creatividad infinita.',
+    cover: '/maincra.jpg'
+  },
+
+  // Valorant
+  {
+    id: 'valorant',
+    title: 'Valorant',
+    short: 'FPS táctico con agentes y habilidades únicas.',
+    cover: '/valorant.jpg' // Asegura esta imagen en /public
+  },
+
+  // Dragon Ball Sparking Zero
+  {
+    id: 'dbsz',
+    title: 'Dragon Ball Sparking Zero',
+    short: 'Peleas explosivas en 3D con cientos de personajes.',
+    cover: '/dbsz.jpg'
+  },
+
+  // Fall Guys
+  {
+    id: 'fallguys',
+    title: 'Fall Guys',
+    short: 'Caos colorido en minijuegos y carreras.',
+    cover: '/fallguys.jpg'
+  },
+
+  // Super Smash Bros
+  {
+    id: 'smash',
+    title: 'Super Smash Bros',
+    short: 'Lucha caótica entre héroes de Nintendo.',
+    cover: '/smash.jpg'
+  },
+
+  // Pokémon Rojo
+  {
+    id: 'pokemonrojo',
+    title: 'Pokémon Rojo',
+    short: 'Aventura clásica atrapando Pokémon.',
+    cover: '/pokemon_rojo.jpg'
+  },
+
+  // Fortnite
+  {
+    id: 'fortnite',
+    title: 'Fortnite',
+    short: 'Battle Royale con construcción y cientos de skins.',
+    cover: '/fortnite.jpg'
   }
 ];
+
+// =======================================================
+//    HOME — LISTA DE JUEGOS
+// =======================================================
 
 export default function Home() {
   return (
     <div>
-      <header style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:18}}>
+      <header 
+        style={{
+          display:'flex',
+          justifyContent:'space-between',
+          alignItems:'center',
+          marginBottom:18
+        }}
+      >
         <div>
           <h1 style={{fontSize:26, color:'#e6f7ff'}}>Explorar juegos</h1>
           <p style={{color:'#9fcff6'}}>Encuentra información y items clave de cada juego.</p>
@@ -59,13 +102,16 @@ export default function Home() {
 
       <section className="games-grid" aria-label="Listado de juegos">
         {GAMES.map(game => (
-          <GameCard key={game.id} game={{
-            id: game.id,
-            title: game.title,
-            short: game.short,
-            cover: game.cover.startsWith('/') ? game.cover : game.cover,
-            moreUrl: '#'
-          }} />
+          <GameCard 
+            key={game.id} 
+            game={{
+              id: game.id,
+              title: game.title,
+              short: game.short,
+              cover: game.cover,
+              moreUrl: `/game/${game.id}`
+            }} 
+          />
         ))}
       </section>
     </div>

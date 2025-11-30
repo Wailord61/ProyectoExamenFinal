@@ -5,7 +5,6 @@ import AppPage from './page/app';
 import Home from './page/home';
 import Detalles from './page/detalles';
 import Login from './page/login';
-import Profile from './page/profile';
 import ItemDetalle from './page/ItemDetalle.jsx'; 
 import './App.css';
 
@@ -22,10 +21,6 @@ function App() {
             <Route path="game/:id" element={<Detalles />} />
             <Route path="game/:id/item/:itemId" element={<ItemDetalle />} />
 
-            <Route
-              path="profile"
-              element={isAuth() ? <Profile /> : <Navigate to="/login" replace />}
-            />
           </Route>
 
           <Route path="/login" element={<Login />} />
