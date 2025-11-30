@@ -127,18 +127,21 @@ export default function Detalles() {
                 <div style={{ fontSize: 12, color: '#9bbfe0' }}>{it.info}</div>
               </div>
 
-              <button
-                style={{
-                  background: 'transparent',
-                  border: '1px solid rgba(255,255,255,0.3)',
-                  borderRadius: 6,
-                  padding: '4px 10px',
-                  cursor: 'pointer',
-                  color: '#cfe9ff'
-                }}
-              >
-                Ver
-              </button>
+              <Link
+  to={`/game/${game.id}/item/${it.id}`}
+  style={{
+    background: 'transparent',
+    border: '1px solid rgba(255,255,255,0.3)',
+    borderRadius: 6,
+    padding: '4px 10px',
+    cursor: 'pointer',
+    color: '#cfe9ff',
+    textDecoration: 'none'
+  }}
+>
+  Ver
+</Link>
+
             </div>
           ))}
         </div>
