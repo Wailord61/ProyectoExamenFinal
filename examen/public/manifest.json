@@ -1,9 +1,9 @@
 {
-  "short_name": "WikiGames",
-  "name": "WikiGames",
+  "short_name": "Wikigames",
+  "name": "Wikigames",
   "icons": [
     {
-      "src": "public/Logoo.png",
+      "src": "Logoo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
