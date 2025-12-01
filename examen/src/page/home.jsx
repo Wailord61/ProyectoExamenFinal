@@ -83,13 +83,9 @@ const GAMES = [
     id: 'warzone',
     title: 'Call of Duty: Warzone',
     short: 'Battle Royale militar con armamento realista y acción intensa.',
-    cover: '/cod.jpg'   // Agrégala en /public
+    cover: '/cod.jpg'
   }
 ];
-
-// =======================================================
-//    HOME — LISTA DE JUEGOS
-// =======================================================
 
 export default function Home() {
   return (

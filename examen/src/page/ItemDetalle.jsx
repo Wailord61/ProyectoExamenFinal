@@ -1,11 +1,5 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-
-// =======================================================
-//   BASE DE DATOS COMPLETA PARA ITEMDETALLE
-//   Sincronizada 1:1 con Detalles.jsx
-// =======================================================
-
 const DB = {
 
   // FIFA 26

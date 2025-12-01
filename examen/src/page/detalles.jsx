@@ -1,13 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-
-// =======================================================
-//     BASE DE DATOS COMPLETA — TODOS LOS 10 JUEGOS
-// =======================================================
 const DB = {
-  // -------------------------------------------------------------
-  // FIFA 26
-  // -------------------------------------------------------------
+
   fifa26: {
     id: 'fifa26',
     title: 'FIFA 26',
@@ -330,15 +324,12 @@ const DB = {
     ]
   },
 
-  // -------------------------------------------------------------
-  // DRAGON BALL SPARKING ZERO
-  // -------------------------------------------------------------
+
   dbsz: {
   id: 'dbsz',
   title: 'Dragon Ball Sparking Zero',
   cover: '/db.jpg',
 
-  // 🟦 CONTROL DEL TAMAÑO DE LA PORTADA (NUEVO)
   coverStyle: {
     height: '250px',
     width: '100%',
@@ -638,7 +629,7 @@ const DB = {
       {
         id: 'w3',
         name: 'ATV',
-        info: 'Objeto equipable.',
+        info: 'Vehiculo.',
         img: '/mask.png',
         detalleGeneral: 'Perfecto para rotaciones.',
         stats: { velocidad: 'Alta', blindaje: 'Bajo' },
@@ -649,9 +640,7 @@ const DB = {
   }
 };
 
-// =======================================================
-//     COMPONENTE DETALLES
-// =======================================================
+
 export default function Detalles() {
   const { id } = useParams();
   const game = DB[id] || { title: 'Juego no encontrado', cover: '/logoo.png', items: [] };
