@@ -254,7 +254,7 @@ const DB = {
         id: "v2",
         name: "Phantom",
         info: "Rifle estable.",
-        img: "/phantom.png",
+        img: "/phamtom.png",
         detalleGeneral:
           "Rifle con retroceso más suave ideal para ráfagas cortas.",
         stats: {
@@ -276,7 +276,7 @@ const DB = {
         id: "v3",
         name: "Agente Jett",
         info: "Duelista ágil.",
-        img: "/jett.png",
+        img: "/jett.jpg",
         detalleGeneral:
           "Agente rápida que destaca por movimientos evasivos.",
         stats: {
@@ -303,7 +303,7 @@ const DB = {
         id: "d1",
         name: "Goku Super Saiyan Blue",
         info: "Forma poderosa.",
-        img: "/goku_blue.png",
+        img: "/ssjb.jpg",
         detalleGeneral:
           "Transformación con gran velocidad y ataques potentes.",
         stats: {
@@ -325,7 +325,7 @@ const DB = {
         id: "d2",
         name: "Gohan Bestia",
         info: "Ataques explosivos.",
-        img: "/gohan_beast.png",
+        img: "/gohan.jpg",
         detalleGeneral:
           "Una de las formas más recientes y poderosas.",
         stats: {
@@ -347,7 +347,7 @@ const DB = {
         id: "d3",
         name: "Torneo del Poder",
         info: "Arena de combate.",
-        img: "/tod.png",
+        img: "/top.jpg",
         detalleGeneral:
           "Escenario destructible icónico del anime.",
         stats: {
@@ -373,7 +373,7 @@ const DB = {
         id: "f1",
         name: "Skin Hotdog",
         info: "Skin clásica.",
-        img: "/hotdog.png",
+        img: "/dog.png",
         detalleGeneral:
           "Una de las primeras skins icónicas del juego.",
         stats: {
@@ -387,8 +387,8 @@ const DB = {
       {
         id: "f2",
         name: "Corona",
-        info: "Premio máximo.",
-        img: "/crown.png",
+        info: "El principal objetivo en el juego que es ganar una partida.",
+        img: "/corona.jpg",
         detalleGeneral:
           "La corona representa ganar una partida completa.",
         stats: {
@@ -402,8 +402,8 @@ const DB = {
       {
         id: "f3",
         name: "Hexagonía",
-        info: "Prueba final.",
-        img: "/hexagonia.png",
+        info: "Uno de los primeros mapas y de los mas conocidos en el juego.",
+        img: "/hexa.jpg",
         detalleGeneral:
           "Final icónica donde caes piso por piso.",
         stats: {
@@ -439,7 +439,7 @@ const DB = {
         id: "s2",
         name: "Link BOTW",
         info: "Arquero y espadachín.",
-        img: "/link_botw.png",
+        img: "/link.jpg",
         detalleGeneral:
           "Gran variedad de herramientas a distancia.",
         stats: {
@@ -454,8 +454,8 @@ const DB = {
       {
         id: "s3",
         name: "Escenario Hyrule",
-        info: "Mapa clásico.",
-        img: "/hyrule.png",
+        info: "Mapa clásico del juego.",
+        img: "/map.png",
         detalleGeneral:
           "Escenario amplio para batallas largas.",
         stats: {
@@ -475,7 +475,7 @@ const DB = {
         id: "p1",
         name: "Charmander",
         info: "Inicial de fuego.",
-        img: "/charmander.png",
+        img: "/charm.png",
         detalleGeneral:
           "Pokémon inicial que evoluciona en Charizard.",
         stats: {
@@ -490,8 +490,8 @@ const DB = {
       {
         id: "p2",
         name: "Pokédex",
-        info: "Registro electrónico.",
-        img: "/pokedex.png",
+        info: "Dispositivo utilizado para registrar todo tipo de criaturas vistas en pokemon.",
+        img: "/dex.png",
         detalleGeneral:
           "Herramienta esencial para registrar Pokémon.",
         stats: {
@@ -505,7 +505,7 @@ const DB = {
       {
         id: "p3",
         name: "Pokebola",
-        info: "Para capturar Pokémon.",
+        info: "Al debilitar un pokemon, puedes utilizarla para capturarlo y se pueda unir a tu equipo.",
         img: "/pokeball.png",
         detalleGeneral:
           "Item básico para capturar Pokémon salvajes.",
@@ -542,7 +542,7 @@ const DB = {
         id: "ft2",
         name: "Peely",
         info: "Skin de plátano.",
-        img: "/peely.png",
+        img: "/bana.png",
         detalleGeneral:
           "Uno de los personajes más icónicos del juego.",
         stats: {
@@ -571,86 +571,82 @@ const DB = {
   },
 
   // CALL OF DUTY WARZONE   <── AÑADIDO
-  warzone: {
-    items: [
-      {
-        id: "w1",
-        name: "Rifle TAQ-56",
-        info: "Rifle de asalto meta.",
-        img: "/taq56.png",
-        detalleGeneral:
-          "El TAQ-56 es uno de los rifles más estables del meta de Warzone gracias a su precisión y control del retroceso.",
-        stats: {
-          Daño: "Alto",
-          Retroceso: "Bajo",
-          Alcance: "Medio-Largo"
-        },
-        curiosidades: [
-          "Arma dominante en Warzone 2.",
-          "Inspirada en la SCAR real."
-        ],
-        estrategias: [
-          "Combínalo con una SMG.",
-          "Ideal para 30-50 metros.",
-          "Controla el retroceso vertical."
-        ]
+ // CALL OF DUTY WARZONE   <── AÑADIDO
+warzone: {
+  items: [
+    {
+      id: "w1",
+      name: "Rifle TAQ-56",
+      info: "Rifle de asalto meta.",
+      img: "/rifle.png",
+      detalleGeneral:
+        "El TAQ-56 es uno de los rifles más estables del meta de Warzone gracias a su precisión y control del retroceso.",
+      stats: {
+        Daño: "Alto",
+        Retroceso: "Bajo",
+        Alcance: "Medio-Largo"
       },
+      curiosidades: [
+        "Arma dominante en Warzone 2.",
+        "Inspirada en la SCAR real."
+      ],
+      estrategias: [
+        "Combínalo con una SMG.",
+        "Ideal para 30-50 metros.",
+        "Controla el retroceso vertical."
+      ]
+    },
 
-      {
-        id: "w2",
-        name: "ISO 9mm",
-        info: "SMG rápida.",
-        img: "/iso9mm.png",
-        detalleGeneral:
-          "La ISO 9mm destaca por su cadencia extremadamente alta, ideal para combates a corta distancia.",
-        stats: {
-          Cadencia: "Muy alta",
-          Control: "Medio",
-          Alcance: "Corto"
-        },
-        curiosidades: [
-          "Meta en competitivo.",
-          "Muy usada en torneos oficiales."
-        ],
-        estrategias: [
-          "Perfecta para limpiar edificios.",
-          "Dispara a ráfagas cortas.",
-          "Apunta al pecho."
-        ]
+    {
+      id: "w2",
+      name: "Máscara de Gas",
+      info: "Item defensivo.",
+      img: "/mask.png",
+      detalleGeneral:
+        "Permite sobrevivir dentro del gas durante unos segundos, ideal para rotaciones finales.",
+      stats: {
+        Duración: "10s",
+        Tipo: "Accesorio",
+        Rareza: "Común"
       },
+      curiosidades: [
+        "Puede ganar partidas en círculo final.",
+        "Existe versión dorada más duradera."
+      ],
+      estrategias: [
+        "Úsala para rotar sin ser visto.",
+        "Ideal para flanquear equipos.",
+        "Pruébala en zonas cerradas."
+      ]
+    },
 
-      {
-        id: "w3",
-        name: "Máscara de Gas",
-        info: "Item defensivo.",
-        img: "/gasmask.png",
-        detalleGeneral:
-          "Permite sobrevivir dentro del gas durante unos segundos, ideal para rotaciones finales.",
-        stats: {
-          Duración: "10s",
-          Tipo: "Accesorio",
-          Rareza: "Común"
-        },
-        curiosidades: [
-          "Puede ganar partidas en círculo final.",
-          "Existe versión dorada más duradera."
-        ],
-        estrategias: [
-          "Úsala para rotar sin ser visto.",
-          "Ideal para flanquear equipos.",
-          "Pruébala en zonas cerradas."
-        ]
-      }
-    ]
-  }
+    {
+      id: "w3",
+      name: "ATV",
+      info: "Vehículo rápido y ligero",
+      img: "/atv.png",
+      detalleGeneral:
+        "El ATV es uno de los vehículos más veloces de Warzone, ideal para rotar rápido entre zonas, aunque ofrece muy poca protección.",
+      stats: {
+        velocidad: "Muy alta",
+        blindaje: "Muy bajo",
+        capacidad: "2 jugadores"
+      },
+      curiosidades: [
+        "Es el vehículo con la mejor aceleración del juego.",
+        "Perfecto para escapar del gas o rotar rápidamente.",
+        "Su tamaño pequeño permite atravesar espacios estrechos."
+      ],
+      estrategias: [
+        "Úsalo para rotaciones rápidas entre zonas seguras.",
+        "Evita cruzar zonas abiertas porque tiene poca protección.",
+        "Aprovecha su velocidad para reposicionarte durante un combate.",
+        "Úsalo para hacer distracciones rápidas o atropellar enemigos."
+      ]
+    }
+  ]
+}
 };
-
-
-
-
-// =======================================================
-//   COMPONENTE PRINCIPAL
-// =======================================================
 export default function ItemDetalle() {
   const { id, itemId } = useParams();
 

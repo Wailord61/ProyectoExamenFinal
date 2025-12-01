@@ -317,7 +317,7 @@ const DB = {
         id: 'v3',
         name: 'Jett',
         info: 'Duelista rápido.',
-        img: '/jett.png',
+        img: '/jett.jpg',
         detalleGeneral:
           'Gran movilidad y agresividad, ideal para entradas.',
         stats: {
@@ -359,7 +359,7 @@ const DB = {
       id: 'd1',
       name: 'Goku SSB',
       info: 'Transformación poderosa.',
-      img: '/goku_blue.png',
+      img: '/ssjb.jpg',
       detalleGeneral: 'Gran velocidad y daño constante.',
       stats: { ataque: 98, velocidad: 96 },
       curiosidades: ['Forma icónica de Super.'],
@@ -369,7 +369,7 @@ const DB = {
       id: 'd2',
       name: 'Gohan Bestia',
       info: 'Transformación moderna.',
-      img: '/gohan_beast.png',
+      img: '/gohan.png',
       detalleGeneral: 'Poder ofensivo extremo.',
       stats: { ataque: 99, defensa: 88 },
       curiosidades: ['Apareció en DBS Super Hero.'],
@@ -379,7 +379,7 @@ const DB = {
       id: 'd3',
       name: 'Torneo del Poder',
       info: 'Escenario inmenso.',
-      img: '/tod.png',
+      img: '/top.jpg',
       detalleGeneral: 'Gran espacio para pelear.',
       stats: { tamaño: 'Grande' },
       curiosidades: ['Basado en el anime.'],
@@ -407,7 +407,7 @@ const DB = {
         id: 'f1',
         name: 'Skin Hotdog',
         info: 'Skin clásica.',
-        img: '/hotdog.png',
+        img: '/dog.png',
         detalleGeneral: 'Muy popular desde la temporada 1.',
         stats: { rareza: 'Media' },
         curiosidades: ['Meme en la comunidad.'],
@@ -417,7 +417,7 @@ const DB = {
         id: 'f2',
         name: 'Corona',
         info: 'Premio final.',
-        img: '/crown.png',
+        img: '/corona.jpg',
         detalleGeneral: 'El objetivo principal del juego.',
         stats: { valor: 'Máximo' },
         curiosidades: ['Usada para skins premium.'],
@@ -427,7 +427,7 @@ const DB = {
         id: 'f3',
         name: 'Hexagonía',
         info: 'Mapa final famoso.',
-        img: '/hexagonia.png',
+        img: '/hexa.jpg',
         detalleGeneral: 'Pisos que desaparecen.',
         stats: { dificultad: 'Alta' },
         curiosidades: ['Final más popular.'],
@@ -465,7 +465,7 @@ const DB = {
         id: 's2',
         name: 'Link BOTW',
         info: 'Espada y arco.',
-        img: '/link_botw.png',
+        img: '/link.jpg',
         detalleGeneral: 'Gran rango y herramientas.',
         stats: { distancia: 85 },
         curiosidades: ['Basado en Breath of the Wild.'],
@@ -475,7 +475,7 @@ const DB = {
         id: 's3',
         name: 'Hyrule',
         info: 'Escenario clásico.',
-        img: '/hyrule.png',
+        img: '/map.png',
         detalleGeneral: 'Amplio y variado.',
         stats: { tamaño: 'Grande' },
         curiosidades: ['Muy usado.'],
@@ -513,7 +513,7 @@ const DB = {
       id: 'p1',
       name: 'Charmander',
       info: 'Inicial de fuego.',
-      img: '/charmander.png',
+      img: '/charm.png',
       detalleGeneral: 'Excelente crecimiento ofensivo.',
       stats: { ataque: 52, velocidad: 65 },
       curiosidades: ['Su cola indica su salud.'],
@@ -523,7 +523,7 @@ const DB = {
       id: 'p2',
       name: 'Pokédex',
       info: 'Registro electrónico.',
-      img: '/pokedex.png',
+      img: '/dex.png',
       detalleGeneral: 'Registra Pokémon.',
       stats: { tipo: 'Herramienta' },
       curiosidades: ['Creada por el Profesor Oak.'],
@@ -627,9 +627,9 @@ const DB = {
       },
       {
         id: 'w2',
-        name: 'Máscara de Gas',
+        name: 'Mascara de gas',
         info: 'Protege del gas.',
-        img: '/gas_mask.png',
+        img: '/mask.png',
         detalleGeneral: 'Te da segundos clave en finales.',
         stats: { duración: 'Corta' },
         curiosidades: ['Puede romperse.'],
@@ -638,8 +638,8 @@ const DB = {
       {
         id: 'w3',
         name: 'ATV',
-        info: 'Vehículo rápido.',
-        img: '/atv.png',
+        info: 'Objeto equipable.',
+        img: '/mask.png',
         detalleGeneral: 'Perfecto para rotaciones.',
         stats: { velocidad: 'Alta', blindaje: 'Bajo' },
         curiosidades: ['Más ligero del juego.'],
@@ -686,8 +686,6 @@ export default function Detalles() {
     marginBottom: 12
   }}
 />
-
-
         <h2>{game.title}</h2>
         <div style={{ color: '#9fcff6' }}>
           {game.genre} • {game.developer} • {game.year}
